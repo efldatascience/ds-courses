@@ -8,7 +8,7 @@ The link for the current online-presentations can always be found here:
 
 # Big Data Challenges 2019/20
 
-Wir wollen euch ermutigen, mit eurem neu erworbenen Wissen bereits euren Data contest zu bestreiten:
+Wir wollen euch ermutigen, mit eurem neu erworbenen Wissen bereits euren ersten Data Contest zu bestreiten:
 
 Jedes Wintersemester wird vom Big Data Lab der Uni Frankfurt das Modul "Data Challenges" ausgerichtet.
 In diesem Modul habt ihr die Möglichkeit, als Team bei einer der üblicherweise von Unternehmen angebotenen Challenges aufzutreten und datengetriebene Probleme zu lösen. 
