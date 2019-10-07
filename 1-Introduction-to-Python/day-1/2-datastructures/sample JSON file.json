@@ -1,30 +1,25 @@
 {
-  "created_at": "Thu Apr 06 15:24:15 +0000 2017",
-  "id_str": "850006245121695744",
-  "text": "1\/ Today we\u2019re sharing our vision for the future of the Twitter API platform!\nhttps:\/\/t.co\/XweGngmxlP",
-  "user": {
-    "id": 2244994945,
-    "name": "Twitter Dev",
-    "screen_name": "TwitterDev",
-    "location": "Internet",
-    "url": "https:\/\/dev.twitter.com\/",
-    "description": "Your official source for Twitter Platform news, updates & events. Need technical help? Visit https:\/\/twittercommunity.com\/ \u2328\ufe0f #TapIntoTwitter"
-  },
-  "place": {   
-  },
-  "entities": {
-    "hashtags": [      
-    ],
-    "urls": [
-      {
-        "url": "https:\/\/t.co\/XweGngmxlP",
-        "unwound": {
-          "url": "https:\/\/cards.twitter.com\/cards\/18ce53wgo4h\/3xo1c",
-          "title": "Building the Future of the Twitter API Platform"
-        }
-      }
-    ],
-    "user_mentions": [     
-    ]
-  }
+  "_id": "5d9a557740844aeb78964d66",
+  "index": 0,
+  "guid": "96f4d34a-f3d9-455f-8a74-31185af777d2",
+  "isActive": true,
+  "balance": "$3,266.24",
+  "picture": "http://placehold.it/32x32",
+  "age": 31,
+  "eyeColor": "brown",
+  "name": "Jessica Cunningham",
+  "gender": "female",
+  "company": "TELEPARK",
+  "email": "jessicacunningham@telepark.com",
+  "phone": "+1 (932) 448-2510",
+  "address": "210 Thatford Avenue, Fingerville, New Mexico, 2367",
+  "tags": [
+    "pariatur",
+    "enim",
+    "minim",
+    "labore",
+    "esse",
+    "ad",
+    "esse"
+  ]
 }
