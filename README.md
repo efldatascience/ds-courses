@@ -22,7 +22,7 @@ Wir wollen euch ermutigen, mit eurem neu erworbenen Wissen bereits euren Data co
 Jedes Wintersemester wird vom Big Data Lab der Uni Frankfurt das Modul "Data Challenges" ausgerichtet.
 In diesem Modul habt ihr die Möglichkeit, als Team bei einer der üblicherweise von Unternehmen angebotenen Challenges aufzutreten und datengetriebene Probleme zu lösen. 
 
-Hierbei kommt es nicht etwa auf extreme Programmierkenntnisse an, sondern auf die anwendung betriebswirtschaftlicher Kenntnisse zu einem Datengetriebenen Lösungs und Geschäftskonzept und der dazugehörigen Implementierung. Hierbei sind vor allem Data Science Kenntnisse in Python sehr hilfreich. Somit habt ihr schon einmal sehr gute Voraussetzungen für diese Challenge! 
+Hierbei kommt es nicht etwa auf extreme Programmierkenntnisse an, sondern auf die Anwendung betriebswirtschaftlicher Kenntnisse zu einem Datengetriebenen Lösungs- und Geschäftskonzept und die dazugehörige Implementierung. Hierbei sind vor allem Data Science Kenntnisse in Python sehr hilfreich. Somit habt ihr schon einmal sehr gute Voraussetzungen für diese Challenge! 
 
 Traut euch also!
 
