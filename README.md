@@ -9,10 +9,9 @@ Link: https://nl3-broadcast.officeapps.live.com/m/Broadcast.aspx?Fi=73f11425973f
 
 
 
+# sli.do
 
-
-
-
+Aktuelle Umfragen auf sli.do findet ihr unter dem Hashtag #DSgoethe19 !
 
 
 # Big Data Challenges 2019/20
