@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 
 ##import data 
-data = pd.read_csv("../../1 - introduction Python/0 - data sets/dataset_small.csv")
+data = pd.read_csv("../dataset_small.csv")
 ##create list features used for classification
 featuresNum = ["emp_length", "annual_inc", "dti"]
 featuresCat = ["home_ownership"]
