@@ -9,12 +9,10 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.tree import DecisionTreeRegressor, export_text, plot_tree
+from sklearn.metrics import mean_squared_error, r2_score, classification_report,accuracy_score
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.model_selection import train_test_split, GridSearchCV, cross_val_score
-from sklearn.tree import export_text, plot_tree
+from sklearn.model_selection import train_test_split
 
 ###########################
 ##### Data Import ######
@@ -79,9 +77,16 @@ plt.show()
 ##########################################
 
 # Now it is time to prepare our data for data-modeling
-# We want to predict if a wine is good or bad for a given set of wine attributes.
+# We want to accomplish two tasks with our machine learning models: 
+# 1. A prediction for how much alcohol will be in a wine of certain attributes.
+# 2. We want to classify if a wine is good or bad for a given set of wine attributes.
 
-# Let's see what values the quality column has.
+# Let's have a look at the values for the first prediction:
+alcohol = set(wine.alcohol.tolist())
+print(alcohol)
+# This data looks perfect for our regression task.
+
+# Now for the second task: Let's see what values the quality column has.
 quality = set(wine.quality.tolist())
 print(quality)
 
@@ -103,7 +108,7 @@ wine['quality'] = pd.cut(...)
 
 # Now take a look at the dataframe column quality. Looks better!
 
-# Our prediction model needs only 0 and 1 to predict whether the wine is good 
+# Our models only need 0 and 1 to classify whether the wine is good 
 # or not. Thus, we must assign 0 for bad and 1 for good quality.
 # We do this with the LabelEncoder.
 
@@ -119,19 +124,16 @@ wine['quality'].value_counts()
 # Make a seaborn countplot for the values of the quality column of wine.
 ....
 
+#############################################
+####Preparing the data for the first task####
+#############################################
+
 # Now seperate the dataset as response variable/ target variable.
 # We do this by using the drop function for subset of independent variables
-# and only adding the quality column to subset for the dependent/target variable.
-X = wine.drop('quality', axis = 1)
-y = wine['quality']
+# and only adding the alcohol column to subset for the dependent/target variable.
+X = wine.drop('alcohol', axis = 1)
+y = wine['alcohol']
 
-# Now, we have the target label/dependent variable to train the prediction.
-# Some machine learning models need a one-hot-encoded version for classification,
-# no matter if binary, or multi-class classification.
-# see: https://medium.com/@michaeldelsole/what-is-one-hot-encoding-and-how-to-do-it-f0ae272f1179
-
-## we do this by the pd.get_dummies method: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html
-y = pd.get_dummies(y)
 #Train and Test splitting of data 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
 
@@ -183,7 +185,7 @@ y_pred = ...
 # evaluation
 mse = mean_squared_error(..., ...)
 r2 = r2_score(..., ...)
-
+print('DT: mse = '+ str(mse) + ' r2 = '+ str(r2))
 # plotting a tree with text
 
 sTree = ...
@@ -194,12 +196,53 @@ plot_tree(..., filled = True, feature_names=list(X.columns),fontsize = 9)
 plt.savefig('tree.pdf')
 
 # What was the result of your Regression Tree?
-# Could it efficiently predict the quality of the wines?
+# Can it efficiently predict the alcohol of the wines?
 # If not, what could be the problem?
+
 
 #######################
 #####RandomForest######
 #######################
+
+##############################################
+####Preparing the data for the second task####
+##############################################
+
+## Now to our most interesting prediction part: we want to know if we can
+## classify good and bad wine. Thus, our target variable is the quality.
+
+# We seperate the dataset as response variable/ target variable.
+# We do this by using the drop function for subset of independent variables
+# and only adding the quality column to subset for the dependent/target variable.
+X = wine.drop('quality', axis = 1)
+y = wine['quality']
+
+# Now, we have the target label/dependent variable to train the classificator.
+# Some machine learning models need a one-hot-encoded version for classification,
+# no matter if binary, or multi-class classification.
+# see: https://medium.com/@michaeldelsole/what-is-one-hot-encoding-and-how-to-do-it-f0ae272f1179
+
+## we do this by the pd.get_dummies method: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html
+y = pd.get_dummies(y)
+#Train and Test splitting of data 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
+
+# Explain the Train-Test split. Why did we split by the test_size?
+# Please explain why we need a train and a test set.
+
+# Applying Standard scaling:
+# Standardization of a dataset is a common requirement for many 
+# machine learning estimators: they might behave badly if the 
+# individual features do not more or less look like standard 
+# normally distributed data (e.g. Gaussian with 0 mean and unit variance).
+# see: https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
+sc = StandardScaler()
+
+X_train = sc.fit_transform(X_train)
+X_test = sc.fit_transform(X_test)
+
+
+# Now we are able to make our classifier.
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -207,7 +250,10 @@ rfc = RandomForestClassifier(n_estimators=200)
 rfc.fit(X_train, y_train)
 pred_rfc = rfc.predict(X_test)
 
-print(classification_report(y_test, pred_rfc))
+print ("Train Accuracy :: ", accuracy_score(y_train, rfc.predict(X_train)))
+print ("Test Accuracy  :: ", accuracy_score(y_test, pred_rfc))
+print(classification_report(y_test, pred_rfc, target_names=['bad','good']))
+print(rfc.score(X_test,y_test))
 
 # What was the result of your Random Forest Classifier?
 # Could it efficiently predict the quality of the wines?
