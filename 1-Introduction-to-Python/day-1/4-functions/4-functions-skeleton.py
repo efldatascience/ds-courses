@@ -29,13 +29,24 @@ def fIsPositive(number):
 ##use loops
 def fSumElems(list1):
     sume = 0
-    ...
-
+    
+    return sume
+    
 def fSquareElems(list1):
+    sq = []
+    for i in list1:
+        tempMulti = i*i
+        sq.append(tempMulti)
+    return sq
+
+    for i in range(len(list1)):
+        tempMulti = list1[i]*list1[i]
+        ...
     ...
 
 ##test your functions    
-Ltest1 = [1, 6, 20, 12]
+Ltest1 = [1, 6, 20,
+          12]
 fSumElems(Ltest1)
 fSquareElems(Ltest1)
 
