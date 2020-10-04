@@ -23,16 +23,16 @@ print(Texample2)
 Texample3 = 
 print(Texample3)
 #%%
-Texample[]
+print(Texample[])
 #%%
-Texample[]
+print(Texample[])
 #%%
-Texample2[]
+print(Texample2[])
 #%%
-Texample2.
+print(Texample2. )
 #%%
 Texample4 = 1,4,3,4,4,5
-Texample4.
+print(Texample4. )
 #%%
 Texample5 = 3.0,4.0,12.0
 dVarA, dVarB, dVarC = 
@@ -51,12 +51,12 @@ print(LVarious)
 LEmpty = 
 print(LEmpty)
 #%%
-LVarious[]
+print(LVarious[] )
 #%%
-LVarious.
+print(LVarious. ) 
 #%%
 
-LVarious[]
+print(LVarious[]
 #%%
 LVariousPart = LVarious[]
 print(LVariousPart)
@@ -81,9 +81,9 @@ LSpotify.
 LSpotify.
 print(LSpotify)
 #%%
-...(LSpotify)
+print ( ...(LSpotify))
 #%%
-LSpotify.
+print(LSpotify. )
 #%%
 LSpotify.
 print(LSpotify)
@@ -92,8 +92,11 @@ LSpotify.
 print(LSpotify)
 #%%
 sTestString = "Lists are awesome and so are Strings!"
-sTestString[3]
-sTestString[0:5] # Play a little! Change the first and the second value.
+#%%
+print(sTestString[3])
+#%%
+print(sTestString[0:5]) # Play a little! Change the first and the second value.
+#%%
 len(sTestString)
 #%%
 ####Sets####
@@ -108,9 +111,10 @@ print(SVarious)
 SEmpty = 
 print(SEmpty)
 #%%
-... SVarious
+
+print(... SVarious)
 #%%
-... SVarious
+print(... SVarious)
 #%%
 LtoSet = [1,2,3,5,2,4,12,523,123,21]
 SfromList = set()
@@ -122,16 +126,16 @@ print(LfromSet)
 
 
 # in SNumbers, but not in SVarious
-SNumbers ...
+print(SNumbers ...)
 #%%
 # in SNumbers or in SVarious or both
-SNumbers ...
+print(SNumbers ...)
 #%%
 # in SNumbers and in SVarious
-SNumbers ...
+print(SNumbers ...)
 #%%
 # in SNumbers or in SVarious but not in both
-SNumbers ...
+print(SNumbers ...)
 #%%
 ####Dictionaries####
 
@@ -150,17 +154,17 @@ print(DNumbers_sVals[])
 DNumbers_sVals[] = ""
 print(DNumbers_sVals[])
 #%%
-DNumbers_sVals.
+print(DNumbers_sVals. )
 #%%
-DNumbers_sVals.
+print(DNumbers_sVals. )
 #%%
 print(DNumbers_sVals[])
 #%%
 DSomeDicts = {"DNumbers":DNumbers, "DNumbers_nKeys": DNumbers_nKeys}
 print(DSomeDicts)
 #%%
-DSomeDicts[]
-DSomeDicts.
+print(DSomeDicts[]
+print(DSomeDicts.
 #%%
 DSomeDicts[] = 
 print(DSomeDicts)
