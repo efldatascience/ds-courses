@@ -26,12 +26,13 @@ def fIsPositive(number):
         return False 
 
 
-#%%exercises: compute mean and variance of a list of integers (or floats)
+#%%application: compute sum elements and squared elements of a list
 ##skeleton for function exercises
 ##use loops
 def fSumElems(list1):
     sume = 0
-    
+    for i in list1:
+        sume += i
     return sume
     
 def fSquareElems(list1):
@@ -41,16 +42,13 @@ def fSquareElems(list1):
         sq.append(tempMulti)
     return sq
 
-    for i in range(len(list1)):
-        tempMulti = list1[i]*list1[i]
-        ...
-    ...
-
 ##test your functions    
 Ltest1 = [1, 6, 20, 12]
 fSumElems(Ltest1)
 fSquareElems(Ltest1)
 
+
+#%%exercises: compute mean and variance of a list of integers (or floats)
 ##mean function using previous functions
 def fMean(list1):
     ...
