@@ -1,3 +1,4 @@
+#%%function: fDoubleMe
 ##function that takes an integer as input an doubles it
 def fDoubleMe(int1):
     result = 2*int1
@@ -16,7 +17,7 @@ def fDoubleMe(int1):
         print("int1 must be of type int.")
         return
         
-
+#%%function: fIsPositive
 ##check whether the input argument (assumption: type numeric) is positive
 def fIsPositive(number): 
     if number>=0: 
@@ -25,6 +26,7 @@ def fIsPositive(number):
         return False 
 
 
+#%%exercises: compute mean and variance of a list of integers (or floats)
 ##skeleton for function exercises
 ##use loops
 def fSumElems(list1):
@@ -45,8 +47,7 @@ def fSquareElems(list1):
     ...
 
 ##test your functions    
-Ltest1 = [1, 6, 20,
-          12]
+Ltest1 = [1, 6, 20, 12]
 fSumElems(Ltest1)
 fSquareElems(Ltest1)
 
@@ -62,6 +63,8 @@ def fVariance(list1):
 
 fVariance(Ltest1)
     
+
+#%%outlook (not covered in presentation)
 ##lambda operator
 squareMe = lambda x: x*x
 
