@@ -126,16 +126,16 @@ print(LfromSet)
 
 
 # in SNumbers, but not in SVarious
-print(SNumbers ...)
+print(SNumbers - SVarious)
 #%%
 # in SNumbers or in SVarious or both
-print(SNumbers ...)
+print(SNumbers | SVarious)
 #%%
 # in SNumbers and in SVarious
-print(SNumbers ...)
+print(SNumbers & SVarious)
 #%%
 # in SNumbers or in SVarious but not in both
-print(SNumbers ...)
+print(SNumbers ^ SVarious)
 #%%
 ####Dictionaries####
 
