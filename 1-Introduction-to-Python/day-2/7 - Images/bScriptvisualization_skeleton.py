@@ -79,10 +79,10 @@ df = pd.read_csv('vgsales.csv', sep=',')
 # LLabels = df['Genre'].value_counts().index
 
 # Try to create a Pie Plot with the data of df['Genre']. 
-# lt.figure(figsize=(7, 7))
-# lt.pie(LSizes, labels=LLabels, autopct='%1.1f%%')
-# lt.title('Games According to Genre')
-# lt.savefig('PieGamesGenre.pdf')
+# plt.figure(figsize=(7, 7))
+# plt.pie(LSizes, labels=LLabels, autopct='%1.1f%%')
+# plt.title('Games According to Genre')
+# plt.savefig('PieGamesGenre.pdf')
 
 
 # %%
@@ -126,14 +126,14 @@ df = pd.read_csv('vgsales.csv', sep=',')
 # Use the optional parameters: height=8, ratio=9, color="blue", alpha=0.1
 # @code: sns.jointplot
 # Note: @code: size is changed to @code: height since: 0.9.0
-# lt.figure()
-# ns.jointplot(df.Year, df.Global_Sales, height=8, ratio=9, color="blue", alpha=0.1)
+# plt.figure()
+# sns.jointplot(df.Year, df.Global_Sales, height=8, ratio=9, color="blue", alpha=0.1)
 #  plt.title('Global Sales Over the Years')
-# lt.ylabel('Global Sales')
-# lt.xlabel('Years')
-# lt.savefig('JoinPlot.pdf')
-# lt.tight_layout()
-# lt.show()
+# plt.ylabel('Global Sales')
+# plt.xlabel('Years')
+# plt.savefig('JoinPlot.pdf')
+# plt.tight_layout()
+# plt.show()
 
 
 # %%
@@ -153,13 +153,13 @@ df = pd.read_csv('vgsales.csv', sep=',')
 # %%
 # Generate the bar plot
 # plt.figure()
-# ns.barplot(y=LdfGroupSales, x=LIndexesOfGroupData, color='darkblue')
-# lt.title('Global Sales Grouped by Year')
-# lt.xticks(rotation=45, fontsize=6)
-# lt.ylabel('Global Sales')
-# lt.xlabel('Years')
-# lt.savefig('BarChart.pdf')
-# lt.show()
+# sns.barplot(y=LdfGroupSales, x=LIndexesOfGroupData, color='darkblue')
+# plt.title('Global Sales Grouped by Year')
+# plt.xticks(rotation=45, fontsize=6)
+# plt.ylabel('Global Sales')
+# plt.xlabel('Years')
+# plt.savefig('BarChart.pdf')
+# plt.show()
 
 
 # %%
