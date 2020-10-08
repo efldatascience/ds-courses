@@ -1,4 +1,4 @@
-# code skeleton for Task 1 and Task 2
+# code skeleton for Task 1
 
 # import packages
 from sklearn.tree import DecisionTreeRegressor, plot_tree
