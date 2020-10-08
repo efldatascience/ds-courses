@@ -1,7 +1,7 @@
-# code skeleton for Task 1 and Task 2
+# code skeleton for Task 2
 
 # import packages
-from sklearn.tree import DecisionTreeRegressor, plot_tree
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 import pandas as pd
