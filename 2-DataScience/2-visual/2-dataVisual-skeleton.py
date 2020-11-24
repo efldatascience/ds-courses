@@ -106,11 +106,13 @@ print(dfNum.columns)
 # Why is this question relevant?
 # Show the counts of observations in each category.
 # We use bars to split our dataset by setting breakpoints.
+# In Syder the quality coudl be a problem. Therefore, we use dpi param.
+# You can also save the image as pdf
 
-# lt.figure()
-# x = sns.countplot(x='purpose', data=df)
-# lt.savefig('figures/Purpose.png')
-# lt.show()
+# plt.figure()
+# ax = sns.countplot(x='purpose', data=df)
+# plt.savefig('figures/Purpose.png')
+# plt.show()
 
 # Upgrade
 # plt.figure()
@@ -120,7 +122,7 @@ print(dfNum.columns)
 # plt.ylabel('Count')
 # plt.title('Purpose of Use')
 # plt.tight_layout()
-# plt.savefig('figures/PurposeImprove.png')
+# plt.savefig('figures/PurposeImprove_300.png', dpi=300)
 # plt.show()
 
 
