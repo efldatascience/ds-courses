@@ -32,14 +32,14 @@ wine = pd.read_csv('winequality-red.csv')
 #############################
 #####Data Visualization######
 #############################
-# Use @code: describe for describe stats.
+# Use @code: for describing stats.
 
 # Pairplot for an overview.
 
 
 # Create a box plot consisting of quality and alcohol acid
 # without outliers. 
-# Add title, names to the axes and save the plot als pdf.
+# Add title, names to the axes and save the plot as pdf.
 plt.figure()
 sns.boxplot(x='quality', y='alcohol', data = wine)
 plt.ylabel('Alcohol')
@@ -59,7 +59,7 @@ plt.show()
 
 
 # Create a heatmap with the correlation. Calculate the correlation with 
-# numpy an use the mask option in the heatmap. Add also axes names and title.
+# numpy and use the mask option in the heatmap. Add also axis names and titles.
 # For what is this plot useful? What insight?  
 corr = wine.corr()
 mask = np.zeros_like(corr, dtype=np.bool)

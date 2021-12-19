@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Sep 26 15:50:32 2019
-
+Remember: Either assign the results of your code statements to a variable 
+or print them out on the console by wrapping your code statement with "print()".
 @author: Nicolas Pfeuffer
 """
 
@@ -192,28 +192,30 @@ df....
 # In our case, the first part of the slice before the comma refers to the
 # records (x-axis), the second to the columns (y-axis).
 
-df....
+df_slice_1 = df....
 #%%
 # This gives us a 3x3 snapshot of the dataframe, starting at the  
 # column 0 ( index) and stopping at the column 4 (with index 3)
-# does it work the same way with loc?
-df....
+# does it work the same way with loc? Print the result.
+df.... 
 #%%
 # Nope. we learned that loc works with 'named' labels. Since the rows do have
 # numeric labels and include the number 3, the first part should be fine.
-# Let's change the second part to the column label.
+# Let's change the second part to the column label. Print the result.
 
-df....
+df.... 
 #%%
 # Another example: find the last element with the ID 16597 with loc and iloc
+# Print the result.
 df....
-#%%
+#%% Print the result.
 df....
 #%%
 # different story: know that iloc works with indices. We do have a first column
 # that is named index, yet is not consistent with our actual dataset index.
 # This is sometimes native to the dataset, sometimes caused by record drops.
 # 16597 would have been the last element. Let's try to get it another way.
+# Print the result.
 df....
 
 #%%

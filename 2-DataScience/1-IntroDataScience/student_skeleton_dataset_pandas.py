@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Sep 16 16:29:57 2019
-
 @author: Nicolas Pfeuffer
 """
 
@@ -192,4 +190,3 @@ corr.style.background_gradient(cmap='coolwarm')
 # Great! We have found first evidence about a correlation between important 
 # attributes in our lending system! We will further investigate from here on
 # using visualizations.
-
