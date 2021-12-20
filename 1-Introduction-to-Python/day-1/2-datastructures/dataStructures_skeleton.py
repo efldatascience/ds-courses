@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 
-@author: Nicolas Pfeuffer
+@author: <Your Name>, based on the code skeleton by Nicolas Pfeuffer
 
-#########################################################################################################
-#																										#
-# Do not forget: This Notebook is split into "Code Cells" with the command #%%.							#
-# You can run these cells with the keyboard combo: Strg/Ctrl + Enter	 								#
-# You can also use #%% to create a new separate cell, if you need it.									#
-#																										#
-#########################################################################################################
+###############################################################################
+#																										
+# Do not forget: This Notebook is split into "Code Cells" with the command #%%.							
+# You can run these cells with the keyboard combo: Strg/Ctrl + Enter	 								
+# You can also use #%% to create a new separate cell, if you need it.									
+#
+###############################################################################
 """
 
 ####Tuples####
