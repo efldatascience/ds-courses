@@ -13,7 +13,7 @@ import pandas as pd
 import numpy as np
 
 #read data to dataframe
-df = pd.read_csv("../vgsales.csv")
+df = pd.read_csv("vgsales.csv")
 
 #perform cleaning from the pandas lecture
 #get information on dataframe
