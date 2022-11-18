@@ -14,3 +14,7 @@ Then set the base directory of Spyder to this course directory. Click on 'Tools'
 
 ## Evaluation (18/11/2022)
 [Hier geht es zur Evaluation.](https://forms.gle/ojiuUoW58Rskjmxw7)
+
+
+## M1 Mac possible Solution
+[How to Manage Conda Environments on an Apple Silicon M1 Mac](https://towardsdatascience.com/how-to-manage-conda-environments-on-an-apple-silicon-m1-mac-1e29cb3bad12)
