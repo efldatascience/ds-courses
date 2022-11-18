@@ -18,9 +18,6 @@ Then set the base directory of Spyder to this course directory. Click on 'Tools'
 
 ## M1 Mac possible Solution
 [How to Manage Conda Environments on an Apple Silicon M1 Mac](https://towardsdatascience.com/how-to-manage-conda-environments-on-an-apple-silicon-m1-mac-1e29cb3bad12)
-
-
-[Try install](https://stackoverflow.com/questions/72504402/installing-tensorflow-on-m1-chip-issues-packagesnotfounderror-the-followin)
-
-
-[Apple Support](https://developer.apple.com/metal/tensorflow-plugin/)
+1) Install a new environment with the reference to the new ARM Architecture (see link)
+2) Install the library's such as tensor-flow-base, scikit-learn, and pandas 
+3) Start sypder 
