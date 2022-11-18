@@ -21,3 +21,6 @@ Then set the base directory of Spyder to this course directory. Click on 'Tools'
 
 
 [Try install](https://stackoverflow.com/questions/72504402/installing-tensorflow-on-m1-chip-issues-packagesnotfounderror-the-followin)
+
+
+[Apple Support](https://developer.apple.com/metal/tensorflow-plugin/)
