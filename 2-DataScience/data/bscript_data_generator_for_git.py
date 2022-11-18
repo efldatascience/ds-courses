@@ -18,5 +18,5 @@ for index, row in df_sample.iterrows():
     df_sample.loc[index, 'member_id'] = str(uuid.uuid1())[0:5]
 print('// complete ....... id and member_id')
 
-df_sample.to_csv('dataset_small.csv')
+df_sample.to_csv('dataset_small.csv', index=False)
 print('// complete ....... script')
