@@ -2,7 +2,14 @@
 
 This is the repository for the material of the data science courses organized by the efl - the Data Science Institute.
 
-Downloading and preparing the course material:
+## ! Quizzes 2022 !
+We have uploaded the quizzes for both courses:
+  - [Python - Quiz](https://github.com/efldatascience/ds-courses/tree/master/1-Introduction-to-Python/Quiz)
+  - [Data Science - Quiz](https://github.com/efldatascience/ds-courses/tree/master/2-DataScience/Quiz)
+  
+**Please follow the instructions and submit your solutions by 31th January 2023.**
+
+## Downloading and preparing the course material:
 
 - 1. Download:
   - For Git(hub)-savvy users: You already know how to clone repositories. Please do so using your method of choice. Copy the path where you saved it.
